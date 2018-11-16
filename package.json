@@ -1,0 +1,11 @@
+{
+  "name": "hex-db-sqlite",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://bitbucket.org/snyder13/hex-db-sqlite",
+  "author": "Steven Snyder <snyder13@purdue.edu>",
+  "license": "MIT",
+  "dependencies": {
+    "sqlite": "^3.0.0"
+  }
+}
