@@ -1,11 +1,11 @@
 {
-  "name": "hex-db-sqlite",
-  "version": "0.0.1",
+  "name": "hex-db-pgsql",
+  "version": "0.0.2",
   "main": "index.js",
-  "repository": "https://bitbucket.org/snyder13/hex-db-sqlite",
+  "repository": "https://bitbucket.org/snyder13/hex-db-pgsql",
   "author": "Steven Snyder <snyder13@purdue.edu>",
   "license": "MIT",
   "dependencies": {
-    "sqlite": "^3.0.0"
+    "pg": "^7.6.1"
   }
 }

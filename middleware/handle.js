@@ -1,6 +1,6 @@
 'use strict';
 
-const sqlite = require('sqlite');
+const { Pool } = require('pg');
 
 module.exports = async ({ app, conf }) =>
-	app.locals.sqlite = await sqlite.open(conf.get('sqlite.path'), { Promise });
+	app.locals.pgsql  = new Pool(conf.get('pgsql'));
