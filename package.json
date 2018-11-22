@@ -1,11 +1,12 @@
 {
-  "name": "hex-db-pgsql",
-  "version": "0.0.2",
+  "name": "hex-db-mysql",
+  "version": "0.0.1",
   "main": "index.js",
-  "repository": "https://bitbucket.org/snyder13/hex-db-pgsql",
+  "repository": "https://bitbucket.org/snyder13/hex-db-mysql",
   "author": "Steven Snyder <snyder13@purdue.edu>",
   "license": "MIT",
   "dependencies": {
-    "pg": "^7.6.1"
+    "mysql": "^2.16.0",
+    "promise-mysql": "^3.3.1"
   }
 }

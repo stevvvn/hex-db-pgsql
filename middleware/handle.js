@@ -1,6 +1,5 @@
 'use strict';
-
-const { Pool } = require('pg');
+const { createPool } = require('promise-mysql');
 
 module.exports = async ({ app, conf }) =>
-	app.locals.pgsql  = new Pool(conf.get('pgsql'));
+	app.locals.mysql = createPool(conf.get('mysql'));
