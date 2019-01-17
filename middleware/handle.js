@@ -7,7 +7,7 @@ module.exports = async ({ app, conf }) => {
 	const connInfo = conf.get('pgsql');
 	if (connInfo.ssl) {
 		Object.values(connInfo.ssl).forEach((key, val) => {
-			if (typeof val === 'string' && (/^[.\/]/).test(val) && fs.existsSync(val)) {
+			if (typeof val === 'string' && (/^[~.\/]/).test(val) && fs.existsSync(val)) {
 				connInfo.ssl[key] = fs.readFileSync(val);
 			}
 		});
